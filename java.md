@@ -32,4 +32,7 @@ The application is accepted if:
 ## 5. Question time! (~15 mins) [2p]
 
 ### How can you generate a random number? [2p]
-#### Your answer: [add your answer here]
+#### Your answer: First you have to import the Math class, which has a .random method. This 
+method generates radomly a double type number between 0.0 (included) and 1.0 (excluded). Then you 
+can get e.g. integers between 1 and 100, if you multiply the given num with 100 and cast it to 
+int (int). (100 excluded). 
