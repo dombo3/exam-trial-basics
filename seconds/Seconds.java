@@ -4,4 +4,9 @@ public class Seconds {
     // and returns a new list with every second element from the orignal list
     // example: [1, 2, 3, 4, 5] should produce [2, 4] - print this result
   }
+
+  public List<Integer> numbersList(List<Integer> numbers) {
+    List<Integer> result = new ArrayList();
+    return result;
+  }
 }
