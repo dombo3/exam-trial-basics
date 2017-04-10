@@ -15,6 +15,7 @@ public class Cuboid {
   }
 
   public int getVolume() {
-    return 0;
+    int volume = x*y*z;
+    return volume;
   }
 }
