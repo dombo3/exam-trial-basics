@@ -41,17 +41,18 @@ public class Pirates{
     // And returns a list of names containing the pirates that
     // - have wooden leg and
     // - have more than 15 gold
-    getWoodenLegMoreThan15goldPirates(pirates);
+    System.out.println(getWoodenLegMoreThan15goldPirates(pirates));
 
   }
 
-  public static List<Pirate> getWoodenLegMoreThan15goldPirates(List<Pirate> pirates) {
-    List<Pirate> WoodenLegandMoreThan15GoldPirate = new ArrayList<>();
+  public static List<String> getWoodenLegMoreThan15goldPirates(List<Pirate> pirates) {
+    List<String> WoodenLegAndMoreThan15GoldPirate = new ArrayList<>();
+
     for (Pirate pirate : pirates) {
       if (pirate.isHasWoodenLeg() && (pirate.getGold() > 15)) {
-        WoodenLegandMoreThan15GoldPirate.add(pirate);
+        WoodenLegAndMoreThan15GoldPirate.add(pirate.getName());
       }
     }
-    return WoodenLegandMoreThan15GoldPirate;
+    return WoodenLegAndMoreThan15GoldPirate;
   }
 }
