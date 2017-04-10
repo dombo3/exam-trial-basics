@@ -14,7 +14,16 @@ public class CountAs {
     // example: on the input "not-a-file" the function should return 0 - print this result
     List<String> fileLines = readFile();
     List<char[]> charArrayList = getCharLists(fileLines);
-    System.out.println(charArrayList.get(0)[0]);
+
+    int counter = 0;
+    for (int i = 0; i < charArrayList.size(); i++) {
+      for (char c : charArrayList.get(i)) {
+        if (c == 'a') {
+          counter++;
+        }
+      }
+    }
+    System.out.println(counter);
   }
 
   public static List<char[]> getCharLists(List<String> fileLines) {
