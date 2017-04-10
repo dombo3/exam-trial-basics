@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Seconds {
   public static void main(String[] args) {
     // Create a function that takes a list as a parameter,
