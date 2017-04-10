@@ -1,6 +1,8 @@
 public class Box {
   public static void main(String[] args) {
+    Cuboid firstCuboid = new Cuboid(2,2,2);
 
+    System.out.println(firstCuboid.getSurface());
   }
   // Create a class that represents a cuboid:
   // It should take its three dimensions as constructor parameters (numbers)

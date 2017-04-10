@@ -10,9 +10,11 @@ public class Cuboid {
   }
 
   public int getSurface() {
+    int surface = 2*x*y + 2*x*z + 2*y*z;
+    return surface;
   }
 
   public int getVolume() {
-
+    return 0;
   }
 }
