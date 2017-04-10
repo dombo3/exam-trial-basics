@@ -12,7 +12,16 @@ public class CountAs {
 
     // example: on the input "afile.txt" the function should return 28 - print this result
     // example: on the input "not-a-file" the function should return 0 - print this result
-    System.out.println(readFile());
+    List<String> fileLines = readFile();
+    List<char[]> charArrayList = new ArrayList<>();
+    for (int i = 0; i < fileLines.size(); i++) {
+      char[] charArray = fileLines.get(i).toCharArray();
+      charArrayList.add(charArray);
+    }
+
+    for (int i = 0; i < charArrayList.size(); i++) {
+      System.out.println(charArrayList.get(i));
+    }
   }
 
   public static List<String> readFile() {
