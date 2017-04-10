@@ -12,7 +12,8 @@ public class CountAs {
 
     // example: on the input "afile.txt" the function should return 28 - print this result
     // example: on the input "not-a-file" the function should return 0 - print this result
-    List<String> fileLines = readFile();
+    Path filePath = Paths.get("not-a-file.txt");
+    List<String> fileLines = readFile(filePath);
     List<char[]> charArrayList = getCharLists(fileLines);
     countChar(charArrayList, 'a');
   }
@@ -38,13 +39,12 @@ public class CountAs {
     return charArrayList;
   }
 
-  public static List<String> readFile() {
+  public static List<String> readFile(Path filePath) {
     List<String> lines = new ArrayList<>();
     try {
-      Path filePath = Paths.get("afile.txt");
       lines = Files.readAllLines(filePath);
     } catch (Exception e) {
-      System.out.println("Could not read the file!");
+      return lines;
     }
     return lines;
   }
